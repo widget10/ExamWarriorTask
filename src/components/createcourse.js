@@ -51,7 +51,7 @@ class Course extends Component {
             
         }
 
-        axios.post('http://localhost:4000/course/add', newCourse)
+        axios.post('https://morning-castle-57709.herokuapp.com/course/add', newCourse)
             .then(res => console.log(res.data));
 
         this.setState({

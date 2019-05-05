@@ -30,7 +30,7 @@ export default class Courselist extends Component {
 
   componentDidMount(){
     
-   axios.get('http://localhost:4000/course')
+   axios.get('https://morning-castle-57709.herokuapp.com/course')
     .then(res => {
        console.log(res.data);
       this.setState({courses:res.data});
